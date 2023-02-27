@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>
+        Data Diri Meisya!
+    </title>
+    <style>
+        .animasi2{
+            animation-duration: 3s;
+            animation-name: slidein;
+            animation-iteration-count: 3s;
+            animation-direction: alternate;
+        }
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 50%;
+            }
+            75% {
+                font-size: 300%;
+                margin-left: 25%;
+                width: 30%;
+            }
+            to {
+                margin-left: 0%;
+                width: 10%;
+            }
+        }
+        .back{
+            text-align:center;
+            margin-top: auto;
+            width: 200px;
+            height: 50px;
+            background-color: rgb(109, 224, 171);
+            position: relative;
+            animation: myfirst 5s linear 2s infinite alternate;
+        }
+        @keyframes myfirst {
+            0% {
+                background-color: red;
+                left: 0px;
+                top: 0px;
+            }
+            25% {
+                background-color: yellow;
+                left: 800px;
+                top: 0px;
+            }
+            50% {
+                background-color: blue;
+                left: 1400px;
+                top: 0px;
+            }
+            75% {
+                background-color: green;
+                left: 800px;
+                top: 0px;
+            }
+            100% {
+                background-color: red;
+                left:0px;
+                top: 0px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="back"> Data Diri </h1>
+    <hr /><br>
+
+    <p> <big> <B> HAI </B></big>
+        ini adalah tugas akhir Percobaan 1 <i>Pemrograman Web</i> </p>
+    <p><del>👇CHECK THIS OUT👇</del></p><br>
+
+    <img src="https://lh3.googleusercontent.com/a-/AOh14GgxQ7xBGVWK0yVWnh1t1PznSNzhC4ZvALjpkR7E=s360-p-no" />
+
+    <p><small><b>👆ini adalah gambar diri saya👆</b></small></p>
+    <p>👉<a href="https://www.instagram.com/meisyaginting/">Klik untuk melihat gambar saya lebih banyak </a>👈 </p><br>
+
+    <table border="1">
+        <thead>
+            <td>Nama</td>
+            <td>Meisya Delila Br Ginting</td>
+        </thead>
+        <tr>
+            <td>NPM</td>
+            <td>2015061065</td>
+        </tr>
+        <tr>
+            <td>Tempat Lahir</td>
+            <td>Binjai</td>
+        </tr>
+        <tr>
+            <td>Tanggal Lahir</td>
+            <td>11 Mei 2002</td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>Jalan Cendana Gang Basri, Tanjung Senang, Bandarlampung</td>
+    </table><br><br>
+    <form method="GET" action="prosesPost.php"> Mari menjadi teman dengan mengisi data diri Anda dibawah ini👇
+        <input type="hidden" name="halaman" value="1">
+        <table border="1">
+            <tr>
+                <td><label for="nama">Nama lengkap</label></td>
+                <td><input type="text" name="nama" id="nama" maxlength="40" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="tmpt">Tempat, Tanggal Lahir</label></td>
+                <td><input type="text" name="tmpt" id="tmpt" maxlength="60" size="30"></td>
+            </tr>
+            <tr>
+                <td><label for="jenkel">Jenis kelamin</label></td>
+                <td><input type="radio" name="jenkel" id="jenkel" value="L">Laki-laki<br>
+                    <input type="radio" name="jenkel" id="jenkel" value="P">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td><label for="alamat">Alamat</label></td>
+                <td><textarea rows="3" cols="30" name="alamat" id="alamat"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="Follow">Sudah Follow <a href="https://www.instagram.com/meisyaginting/">IG ku </a> ?</label></td>
+                <td><input type="checkbox" name="follow" id="follow">Sudah</td>
+            </tr>
+            <tr>
+                <td><label for="foto">Kirim Foto Kamu juga ya😆</label></td>
+                <td><input type="file" name="foto" id="foto"
+                size="10"></td>
+                </tr>
+        </table>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+
+</html>
